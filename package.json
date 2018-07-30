@@ -1,0 +1,34 @@
+{
+  "name": "cordova-plugin-android-safetynet",
+  "version": "1.0.0",
+  "cordova": {
+    "id": "cordova-plugin-android-safetynet",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "safetynet",
+    "android",
+    "security",
+    "attestation",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "description": "A wrapper plugin for safetynet API on Play Enabled devices. This plugin extends attestation and app verification methods.",
+  "engines": {
+    "cordovaDependencies": {
+      "1.0.0": {"cordova-android": ">=4.0.0" }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/karandpr/cordova-plugin-android-safetynet"
+  },
+  "bugs": {
+    "url": "https://github.com/karandpr/cordova-plugin-android-safetynet/issues"
+  },
+   "license" : "Apache-2.0",
+   "author": "Karan Gandhi"
+}

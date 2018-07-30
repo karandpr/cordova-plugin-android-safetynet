@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="cordova-plugin-android-safetynet"
+    version="1.0.0">
+    <name>SafetyNet for Android</name>
+    <description>A wrapper plugin for safetynet API on Play Enabled devices. This plugin extends attestation and app verification methods.</description>
+    <license>Apache 2.0 License</license>
+    <keywords>android,safetynet,security,attestation</keywords>
+
+    <!-- android -->
+    <platform name="android">
+      <js-module src="www/safetynet.js" name="plugin">
+        <runs/>       
+        <clobbers target="safetynet" />
+      </js-module>
+      <config-file target="res/xml/config.xml" parent="/*">
+        <feature name="safetynet">
+          <param name="android-package" value="com.kdpr.safetynet" />
+          <param name="onload" value="true" />
+        </feature>
+      </config-file>
+
+      <source-file src="src/android/com/kdpr/safetynet.java" target-dir="src/com/kdpr/" />
+       <framework src="src/android/build-extras.gradle" custom="true" type="gradleReference" />
+    </platform>
+</plugin>
