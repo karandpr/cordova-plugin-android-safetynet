@@ -19,7 +19,7 @@
   "description": "A wrapper plugin for safetynet API on Play Enabled devices. This plugin extends attestation and app verification methods.",
   "engines": {
     "cordovaDependencies": {
-      "1.0.0": {"cordova-android": ">=4.0.0" }
+      "1.0.2": {"cordova-android": ">=4.0.0" }
     }
   },
   "repository": {

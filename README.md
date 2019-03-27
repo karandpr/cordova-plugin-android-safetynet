@@ -6,13 +6,13 @@ At the time of writing , I am targeting Play Service 15.0.1 in gradle.
 
 ## Installation
 
-Cordova: 
-```
+Cordova:
+```bash
 cordova plugin add cordova-plugin-android-safetynet
 ```
 
 Ionic:
-```
+```bash
 ionic cordova plugin add cordova-plugin-android-safetynet
 ```
 ## Safety Net URL & some links
