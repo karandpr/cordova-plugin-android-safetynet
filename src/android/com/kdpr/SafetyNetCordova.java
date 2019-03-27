@@ -22,7 +22,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 
 
-public class safetynet extends CordovaPlugin {
+public class SafetyNetCordova extends CordovaPlugin {
   private static final String TAG = "safetynet";
 
   public void initialize(CordovaInterface cordova, CordovaWebView webView) {
@@ -89,8 +89,7 @@ public class safetynet extends CordovaPlugin {
                    
                     if (task.isSuccessful()) {
                         SafetyNetApi.HarmfulAppsResponse result = task.getResult();
-                        String harmfulAppArray = "[";
-                        long scanTimeMs = result.getLastScanTimeMs();
+                        String harmfulAppArray = "[";                       
                         List<HarmfulAppsData> appList = result.getHarmfulAppsList();
                         if (appList.isEmpty()) {
                             harmfulAppArray = harmfulAppArray + "]";

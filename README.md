@@ -31,18 +31,17 @@ TBA
 You will need API key from Google APIs Console for initiating attestation.
 
 A nonce security token from server side, is also required.
-```
+```javascript
 window.safetynet.attest(nonce ,API_Key ,successCallback ,errorCallback);
 ```
 
 #### Success Callbacks
 A JWS string is sent back as success. This is the same data obtained from getJwsResult(). This data should be again cross verified with google.
 
-
 ### Syntax for Verify Apps API
 Three methods are available for the SafetyNet Verify Apps API.
 
-#### Check Verify App is Enabled: 
+#### Check Verify App is Enabled
 This method allows a check for Verify App(Play Protect). The result is a boolean in successcallback.
 ```javascript
 window.safetynet.checkAppVerification(successCallback, errorCallback)

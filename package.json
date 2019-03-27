@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-android-safetynet",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "cordova": {
     "id": "cordova-plugin-android-safetynet",
     "platforms": [
