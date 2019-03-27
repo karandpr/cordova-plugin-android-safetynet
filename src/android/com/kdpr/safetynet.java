@@ -6,16 +6,10 @@ import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaInterface;
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CordovaWebView;
-import org.apache.cordova.PluginResult;
-import org.apache.cordova.PluginResult.Status;
-import org.json.JSONObject;
 import org.json.JSONArray;
 import org.json.JSONException;
-
 import android.util.Log;
-import java.util.Date;
 import java.util.List;
-
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.android.gms.common.api.ApiException;
@@ -26,7 +20,7 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import android.util.Base64;
+
 
 public class safetynet extends CordovaPlugin {
   private static final String TAG = "safetynet";
@@ -53,7 +47,7 @@ public class safetynet extends CordovaPlugin {
             @Override
                 public void onFailure(Exception e) {
                     if (e instanceof ApiException) {                                
-                    ApiException apiException = (ApiException) e;                              
+                                                
                     /** SafetyNet Failed */
                     callbackContext.error("failed "+e.getMessage());
                 } else {                               

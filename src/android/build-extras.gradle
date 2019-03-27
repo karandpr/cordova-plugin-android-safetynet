@@ -3,5 +3,5 @@ repositories{
 }
 
 dependencies {    
-    compile 'com.google.android.gms:play-services-safetynet:15.0.1'
+    compile 'com.google.android.gms:play-services-safetynet:16.0.0'
 }
