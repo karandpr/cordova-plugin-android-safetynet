@@ -1,5 +1,7 @@
 # Cordova SafetyNet
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/3292840a5d6847cdbfca7fc465a3f45f)](https://app.codacy.com/app/karandpr/cordova-plugin-android-safetynet?utm_source=github.com&utm_medium=referral&utm_content=karandpr/cordova-plugin-android-safetynet&utm_campaign=Badge_Grade_Dashboard)
+
 A wrapper plugin for safetynet API on Play Enabled devices. This plugin extends attestation and app verification methods.
 Google Play Service are required on device.
 At the time of writing , I am targeting Play Service 15.0.1 in gradle.
